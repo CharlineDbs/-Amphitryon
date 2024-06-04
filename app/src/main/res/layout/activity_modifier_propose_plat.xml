@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModifierProposePlatActivity">
+
+
+    <ImageView
+        android:id="@+id/imagesAmphitryon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/amphitryon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textService"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="10dp"
+        android:text="Service "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagesAmphitryon"/>
+
+    <TextView
+        android:id="@+id/textPlat"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="Plat "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textService"/>
+
+    <TextView
+        android:id="@+id/textPrixVente"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:text="Prix de Vente : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textPlat"/>
+
+    <EditText
+        android:id="@+id/editPrix"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:hint="Prix vente"
+        app:layout_constraintStart_toEndOf="@+id/textPrixVente"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textPrixVente"/>
+
+    <TextView
+        android:id="@+id/textQteProp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:text="Quantitée proposée : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textPrixVente"/>
+
+    <EditText
+        android:id="@+id/editQteProp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:hint="Quantité"
+        app:layout_constraintStart_toEndOf="@+id/textQteProp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textQteProp"/>
+
+    <Button
+        android:id="@+id/btn_Modifier"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:text="Modifier"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editPrix" />
+
+    <Button
+        android:id="@+id/btn_Supprimer"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Supprimer"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_Modifier" />
+
+    <Button
+        android:id="@+id/btn_Quitter"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Quitter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_Supprimer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
